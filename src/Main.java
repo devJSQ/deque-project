@@ -1,4 +1,4 @@
-class DequeArray{
+class Deque {
     /* Your Code Here */
     
 }
