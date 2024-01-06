@@ -2,12 +2,12 @@
 
 ### Objective
 
-In this project, we will cover the fundamentals of the `deque`, and it's operations.
+In this project, we will cover the fundamentals of the `deque`, and its operations.
 
 
 ### Concepts
 
-Use the provided resources for a better understanding.
+Please use the provided resources for a better understanding.
 
 
 | Concept                                        | Resources                                                                                                                                |
@@ -22,12 +22,12 @@ Create a `deque` class using an `array` approach.
 
 ### Implementation
 
-Write the implementation of the `DequeArray` class, to store the orders number on the drive through restaurants line.
+Write the implementation of the `Deque` class, to store the order number on the drive-through restaurant line.
 
-> the order number is `Integer` type.
+> The order number is `Integer` type.
 
 1. Write the `DequeArray` attributes, where we can store the orders.
-2. Write the implemenation of the following methods:
+2. Write the implementation of the following methods:
    1. addFirst()
    2. addLast()
    3. deleteFirst()
@@ -39,7 +39,7 @@ Write the implementation of the `DequeArray` class, to store the orders number o
 > Run the main method to verify the implementation.
 
 ````Java
-class DequeArray{
+class Deque {
     /* Your Code Here */
   
 }
@@ -52,5 +52,5 @@ public class Main {
 
 ````
 
-> * Once you complete this project, Create an issue with title "Completed [your-username]".
-> * Create an issue of your questions, If you face any trouble solving the project.
+> * Once you complete this project, Create an issue with the title "Completed [your-username]".
+> * Please create an issue of your questions.
