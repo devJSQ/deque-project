@@ -18,11 +18,11 @@ Please use the provided resources for a better understanding.
 
 ### Problem
 
-Create a `deque` class using an `array` approach.
+Store the order number using deque data structure.
 
 ### Implementation
 
-Write the implementation of the `Deque` class, to store the order number on the drive-through restaurant line.
+Write the implementation of the `Deque` class, to store the order number.
 
 > The order number is `Integer` type.
 
