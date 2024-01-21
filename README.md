@@ -22,35 +22,44 @@ Store the order number using deque data structure.
 
 ### Implementation
 
-Write the implementation of the `Deque` class, to store the order number.
+Write the implementation of the **addFirst(), addLast(), removeFirst(), removeLast()**.
 
-> The order number is `Integer` type.
-
-1. Write the `DequeArray` attributes, where we can store the orders.
-2. Write the implementation of the following methods:
-   1. addFirst()
-   2. addLast()
-   3. deleteFirst()
-   4. deleteLast()
-3. In the main method, using the **addFirst()** method add **110** and **120** to the `deque`.
-4. using the **addLast()** method add **130** to the `deque`.
-5. Print the `front` and `rear` of the `deque`.
-
-> Run the main method to verify the implementation.
+> Run the main method to verify your code implementation.
 
 ````Java
-class Deque {
-    /* Your Code Here */
-  
-}
+import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        /* Your Code Here */
+
+        Deque deque = new Deque();
+
+        deque.addFirst(new User(1, "Khaled"));
+        deque.addFirst(new User(2, "Sara"));
+
+        deque.addLast(new User(4, "Ahmed"));
+        deque.addLast(new User(6, "Lama"));
+
+        deque.addFirst(new User(3, "Khaled"));
+
+        System.out.println(deque.removeFirst().name);
+        System.out.println(deque.removeLast().name);
+
+        System.out.println(deque.removeFirst().name);
+
     }
 }
 
 ````
+
+**Output**
+
+```
+Khaled
+Lama
+Sara
+
+```
 
 > * Once you complete this project, Create an issue with the title "Completed [your-username]".
 > * Please create an issue of your questions.
