@@ -56,4 +56,6 @@ public class Deque {
 
         return rear.data;
     }
+
+    // Bonus Challenge: Print the Deque backward
 }
