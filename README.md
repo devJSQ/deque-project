@@ -18,11 +18,11 @@ Please use the provided resources for a better understanding.
 
 ### Problem
 
-Store the order number using deque data structure.
+Store the order number using the deque data structure.
 
 ### Implementation
 
-Write the implementation of the **addFirst(), addLast(), removeFirst(), removeLast()**.
+In the Deque class, write the implementation of the following methods **addFirst(), addLast(), removeFirst(), removeLast()**.
 
 > Run the main method to verify your code implementation.
 
