@@ -9,12 +9,35 @@ public class Deque {
     }
 
     public void addFirst(User newData) {
-        // Your code here
+        Node newNode = new Node(newData);
+        if(front == null){
+            this.front = newNode;
+            this.rear = newNode;
+        }
+
+        if(front != null){
+        newNode.next = front;
+        front.previews = newNode;
+        front = newNode;
+        }
+
+
+
 
     }
 
     public void addLast(User newData) {
-        // Your code here
+        Node newNode = new Node(newData);
+        if (rear == null) {
+            this.rear = newNode;
+            this.front = newNode;
+        }
+        if (rear != null){
+            newNode.previews = rear;
+            rear.next = newNode;
+            rear = newNode;
+        }
+
     }
 
     public User removeFirst() {
@@ -23,9 +46,11 @@ public class Deque {
             return null;
         }
 
-        // Your code here
-
-        return null;
+        front.next.previews = null;
+        var x = front.data;
+        front = front.next;
+        
+        return x;
     }
 
     public User removeLast() {
@@ -34,9 +59,11 @@ public class Deque {
             return null;
         }
 
-        // Your code here
+        rear.previews.next = null;
+        var y = rear.data;
+        rear = rear.previews;
 
-        return null;
+        return y;
     }
 
     public User getFront() {
@@ -57,5 +84,13 @@ public class Deque {
         return rear.data;
     }
 
-    // Bonus Challenge: Print the Deque backward
+    public void desplay(){
+        var temp = rear;
+        System.out.println(temp.previews.data.id);
+
+        while (temp.previews != null) {
+            System.out.println(temp.data.id);
+            temp = temp.previews;
+        }
+    }
 }
